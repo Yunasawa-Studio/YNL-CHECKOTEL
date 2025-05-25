@@ -1,0 +1,13 @@
+Font: Nunito  Style: ExtraLight
+Point Size: 157   Padding: 9   SP/PD Ratio: 5.7%
+
+Characters included: 99/100
+Missing characters: 1
+Excluded characters: 0
+
+Characters missing from font file:
+----------------------------------------
+ID: 9	Hex: 9	Char [	]
+
+Characters excluded from packing:
+----------------------------------------
