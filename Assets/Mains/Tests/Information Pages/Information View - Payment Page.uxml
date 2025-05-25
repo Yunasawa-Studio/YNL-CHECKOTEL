@@ -1,0 +1,95 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/SigningPageStyle.uss?fileID=7433441132597879392&amp;guid=3d898daa5f70b3840a09a6a12403af2c&amp;type=3#SigningPageStyle" />
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/MainPage.uss?fileID=7433441132597879392&amp;guid=1edcbd6233be03248a6afc0041aeffad&amp;type=3#MainPage" />
+    <engine:VisualElement name="ScreenBackground" style="flex-grow: 1; background-color: rgb(41, 41, 41); position: absolute; width: 100%; height: 100%;" />
+    <engine:VisualElement name="HeaderField" style="padding-top: 100px; padding-right: 50px; padding-bottom: 25px; padding-left: 50px; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-bottom-width: 2px;">
+        <engine:VisualElement name="LabelField" style="height: 100px;">
+            <engine:VisualElement name="CloseButton" style="position: absolute; height: 100px; width: 50px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Back.png?fileID=2800000&amp;guid=f976b996dba51a04aa5b413340cc432e&amp;type=3#Back&quot;); background-size: 50% 50%; -unity-background-scale-mode: scale-to-fit;" />
+            <engine:Label text="Confirmation and payment" name="LabelTitle" style="height: 100px; width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito%20SDF.asset?fileID=11400000&amp;guid=995852a4f5cc55e4e89fa1e7e897eac5&amp;type=2#Nunito SDF&quot;); -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-align: middle-center; font-size: 60px;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:ScrollView name="ScrollView" style="flex-grow: 1;">
+        <engine:VisualElement name="Space" style="flex-grow: 1; height: 25px;" />
+        <engine:VisualElement name="RoomField" style="padding-left: 50px; padding-right: 50px; background-color: rgb(44, 44, 44); padding-top: 25px; padding-bottom: 25px; margin-bottom: 25px;">
+            <engine:VisualElement name="LabelField" style="height: 75px; flex-direction: row; margin-bottom: 10px;">
+                <engine:Label text="Your choice" name="Label" class="label-field" style="-unity-font-style: bold; font-size: 45px; flex-grow: 1; -unity-text-align: middle-left;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="PreviewField" style="flex-direction: row; height: 200px;">
+                <engine:VisualElement name="PreviewImage" style="height: 100%; width: 275px; background-image: resource(&apos;Images/Samples/Coastal Twin Room&apos;); align-self: center; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;" />
+                <engine:VisualElement name="InformationField" style="flex-grow: 1; margin-left: 25px; height: 200px; align-self: center;">
+                    <engine:VisualElement name="HotelNameField" style="height: 50px; flex-direction: row;">
+                        <engine:VisualElement name="Icon" style="height: 50px; width: 25px; background-image: resource(&apos;Icons/Building&apos;); -unity-background-scale-mode: scale-to-fit; min-width: 25px; min-height: 50px;" />
+                        <engine:Label text="Ocean Breeze Resort Noosa" name="HotelName" class="label-field" style="font-size: 30px; height: 50px; -unity-text-align: middle-left; margin-left: 10px; overflow: hidden; text-overflow: ellipsis;" />
+                    </engine:VisualElement>
+                    <engine:Label text="Coastal Twin Room" name="RoomName" class="label-field" style="font-size: 40px; -unity-font-style: bold; height: 50px; -unity-text-align: middle-left;" />
+                    <engine:VisualElement name="AddressField" style="height: 85px; margin-top: 15px; flex-direction: row;">
+                        <engine:VisualElement name="Icon" style="height: 40px; width: 25px; background-image: resource(&apos;Icons/Location&apos;); -unity-background-scale-mode: scale-to-fit; min-height: 40px; min-width: 25px;" />
+                        <engine:Label text="456 Seaside Avenue, Sydney, Australia" name="Name" class="label-field" style="font-size: 30px; margin-left: 10px; white-space: normal; text-overflow: ellipsis; overflow: hidden;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="TimeField" style="padding-left: 50px; padding-right: 50px; background-color: rgb(44, 44, 44); padding-top: 25px; padding-bottom: 25px; margin-bottom: 25px; flex-direction: row; height: 300px;">
+            <engine:VisualElement name="TimeBox" style="height: 100%; width: 200px; align-self: center; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; background-color: rgb(65, 61, 57); justify-content: center;">
+                <engine:VisualElement name="Icon" style="background-image: resource(&apos;Icons/Hourly&apos;); height: 75px; width: 75px; align-self: center;" />
+                <engine:Label text="2 hours" name="DurationText" class="label-field" style="align-self: center; font-size: 35px; -unity-font-style: bold; margin-top: 15px; height: 45px; -unity-text-align: middle-left;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="TimeRange" style="flex-grow: 1; margin-left: 25px; height: 100%; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; padding-left: 10px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px;">
+                <engine:VisualElement name="CheckInTime" style="flex-basis: 50%; justify-content: center;">
+                    <engine:Label text="Check-in" name="Title" class="label-field" style="font-size: 30px; height: 40px; -unity-text-align: middle-left; margin-left: 10px; overflow: hidden; text-overflow: ellipsis;" />
+                    <engine:Label text="19:00 • 22/05/2025" name="TimeField" class="label-field" style="font-size: 35px; height: 50px; -unity-text-align: middle-left; margin-left: 10px; overflow: hidden; text-overflow: ellipsis; -unity-font-style: bold; white-space: pre-wrap;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="CheckOutTime" style="flex-basis: 50%; justify-content: center;">
+                    <engine:Label text="Check-out" name="Title" class="label-field" style="font-size: 30px; height: 40px; -unity-text-align: middle-left; margin-left: 10px; overflow: hidden; text-overflow: ellipsis;" />
+                    <engine:Label text="19:00 • 22/05/2025" name="TimeField" class="label-field" style="font-size: 35px; height: 50px; -unity-text-align: middle-left; margin-left: 10px; overflow: hidden; text-overflow: ellipsis; -unity-font-style: bold; white-space: pre-wrap;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="AccountField" style="padding-left: 50px; padding-right: 50px; background-color: rgb(44, 44, 44); padding-top: 25px; padding-bottom: 25px; margin-bottom: 25px;">
+            <engine:VisualElement name="LabelField" style="height: 75px; flex-direction: row; margin-bottom: 10px;">
+                <engine:Label text="User information" name="Label" class="label-field" style="-unity-font-style: bold; font-size: 45px; flex-grow: 1; -unity-text-align: middle-left;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="InformationArea">
+                <engine:VisualElement name="PhoneNumberField" style="flex-grow: 1; height: 75px; flex-direction: row;">
+                    <engine:Label text="Phone number" name="Title" class="label-field" style="flex-grow: 1; -unity-text-align: middle-left; font-size: 40px;" />
+                    <engine:Label text="(61) 32 234 843" name="Value" class="label-field" style="font-size: 40px; -unity-text-align: middle-left; -unity-font-style: bold;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="FullNameField" style="flex-grow: 1; height: 75px; flex-direction: row;">
+                    <engine:Label text="Full name" name="Title" class="label-field" style="flex-grow: 1; -unity-text-align: middle-left; font-size: 40px;" />
+                    <engine:Label text="Yunasawa" name="Value" class="label-field" style="font-size: 40px; -unity-text-align: middle-left; -unity-font-style: bold;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="PaymentMethodField" style="padding-left: 50px; padding-right: 50px; background-color: rgb(44, 44, 44); padding-top: 25px; padding-bottom: 25px; margin-bottom: 25px;">
+            <engine:VisualElement name="LabelField" style="height: 75px; flex-direction: row; margin-bottom: 10px;">
+                <engine:Label text="Payment methods" name="Label" class="label-field" style="-unity-font-style: bold; font-size: 45px; flex-grow: 1; -unity-text-align: middle-left;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="PaymentArea">
+                <engine:VisualElement name="CreditCard" style="flex-grow: 1; height: 100px; flex-direction: row; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-bottom-width: 2px;">
+                    <engine:VisualElement name="Icon" style="background-image: resource(&apos;Icons/Credit Card&apos;); height: 65px; width: 65px; align-self: center; -unity-background-scale-mode: scale-to-fit;" />
+                    <engine:Label text="Credit Card" name="Title" class="label-field" style="flex-grow: 1; -unity-text-align: middle-left; font-size: 40px; margin-left: 15px;" />
+                    <engine:VisualElement name="Check" style="background-image: resource(&apos;Icons/Checkbox&apos;); height: 50px; width: 50px; align-self: center; -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                </engine:VisualElement>
+                <engine:VisualElement name="VISA" style="flex-grow: 1; height: 100px; flex-direction: row; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-bottom-width: 2px;">
+                    <engine:VisualElement name="Icon" style="background-image: resource(&apos;Icons/VISA&apos;); height: 65px; width: 65px; align-self: center; -unity-background-scale-mode: scale-to-fit;" />
+                    <engine:Label text="VISA" name="Title" class="label-field" style="flex-grow: 1; -unity-text-align: middle-left; font-size: 40px; margin-left: 15px;" />
+                    <engine:VisualElement name="Check" style="background-image: resource(&apos;Icons/Checkbox&apos;); height: 50px; width: 50px; align-self: center; -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Paypal" style="flex-grow: 1; height: 100px; flex-direction: row; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-bottom-width: 2px;">
+                    <engine:VisualElement name="Icon" style="background-image: resource(&apos;Icons/Paypal&apos;); height: 65px; width: 65px; align-self: center; -unity-background-scale-mode: scale-to-fit;" />
+                    <engine:Label text="Paypal" name="Title" class="label-field" style="flex-grow: 1; -unity-text-align: middle-left; font-size: 40px; margin-left: 15px;" />
+                    <engine:VisualElement name="Check" style="background-image: resource(&apos;Icons/Checkbox&apos;); height: 50px; width: 50px; align-self: center; -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                </engine:VisualElement>
+                <engine:VisualElement name="PayAtPlace" style="flex-grow: 1; height: 100px; flex-direction: row; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-bottom-width: 0;">
+                    <engine:VisualElement name="Icon" style="background-image: resource(&apos;Icons/Money&apos;); height: 50px; width: 65px; align-self: center; -unity-background-scale-mode: scale-to-fit;" />
+                    <engine:Label text="Pay at the hotel" name="Title" class="label-field" style="flex-grow: 1; -unity-text-align: middle-left; font-size: 40px; margin-left: 15px;" />
+                    <engine:VisualElement name="Check" style="background-image: resource(&apos;Icons/Checkbox (Checked)&apos;); height: 50px; width: 50px; align-self: center; -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(254, 209, 167);" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:ScrollView>
+    <engine:VisualElement name="Footer" style="height: 150px; min-height: 50px; flex-direction: row; padding-left: 50px; padding-right: 50px; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-top-width: 2px;">
+        <engine:Label text="&lt;size=35&gt;Total payment&lt;/size&gt;&#10;&lt;b&gt;&lt;color=#FED1A7&gt;7.99$&lt;/color&gt;&lt;/b&gt;" name="LastPrice" class="label-field" style="-unity-text-align: middle-left; font-size: 50px; align-self: center; flex-grow: 1;" />
+        <engine:Button text="Book" name="BookButton" class="label-field" style="height: 100px; align-self: center; width: 250px; background-color: rgb(254, 209, 167); border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; color: rgb(41, 41, 41); -unity-font-style: bold;" />
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/MainPage.uss?fileID=7433441132597879392&amp;guid=1edcbd6233be03248a6afc0041aeffad&amp;type=3#MainPage" />
+    <engine:VisualElement name="ScreenBackground" style="flex-grow: 1; background-color: rgb(41, 41, 41); position: absolute; width: 100%; height: 100%; transition-property: background-color; transition-duration: 1s;" />
+    <engine:VisualElement name="Ground" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; justify-content: center; background-color: rgba(182, 149, 116, 0); transition-property: opacity; transition-duration: 1s;">
+        <engine:VisualElement name="Logo" style="width: 400px; height: 400px; align-self: center; background-image: resource(&apos;Icons/Apps/CHECKOTEL (Light)&apos;);" />
+        <engine:Label text="CHECKOTEL" name="Title" style="margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 62.5px; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(214, 185, 155); -unity-font-definition: resource(&apos;Fonts/SDFs/Nunito/Nunito-Bold SDF&apos;); margin-top: 25px;" />
+    </engine:VisualElement>
+</engine:UXML>

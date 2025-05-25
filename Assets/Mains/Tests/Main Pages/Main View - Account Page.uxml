@@ -1,0 +1,61 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/SigningPageStyle.uss?fileID=7433441132597879392&amp;guid=3d898daa5f70b3840a09a6a12403af2c&amp;type=3#SigningPageStyle" />
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/MainPage.uss?fileID=7433441132597879392&amp;guid=1edcbd6233be03248a6afc0041aeffad&amp;type=3#MainPage" />
+    <engine:VisualElement name="ScreenBackground" style="flex-grow: 1; background-color: rgb(41, 41, 41); position: absolute; width: 100%; height: 100%;" />
+    <engine:ScrollView name="ContentScroll" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="Hidden" style="flex-grow: 1;">
+        <engine:VisualElement name="AccountField" style="padding-left: 50px; padding-right: 50px; background-color: rgb(44, 44, 44); padding-top: 25px; padding-bottom: 25px; margin-bottom: 25px; margin-top: 100px;">
+            <engine:VisualElement name="ProfileField" style="flex-grow: 1; flex-direction: row;">
+                <engine:VisualElement name="ProfilePicture" style="width: 200px; height: 200px; border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; background-color: rgb(57, 57, 57); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-left-color: rgb(113, 113, 113); border-right-color: rgb(113, 113, 113); border-top-color: rgb(113, 113, 113); border-bottom-color: rgb(113, 113, 113); background-image: resource(&apos;Images/Starting Background 1&apos;);" />
+                <engine:VisualElement name="InfoField" style="flex-grow: 1; margin-left: 40px; justify-content: space-evenly;">
+                    <engine:VisualElement name="NameField" style="height: 75px; flex-direction: row;">
+                        <engine:Label text="User10000101" name="NameText" class="label-field" style="-unity-font-style: bold; height: 75px; -unity-text-align: middle-left; margin-right: 25px;" />
+                        <engine:VisualElement name="ChangeButton" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/Change&apos;); background-size: 60% 60%; -unity-background-image-tint-color: rgb(254, 209, 167);" />
+                    </engine:VisualElement>
+                    <engine:Label text="+1 604-555-0165" name="PhoneField" class="label-field" style="font-size: 40px; -unity-text-align: middle-left; height: 50px;" />
+                    <engine:Label text="user10000101@com.au" name="EmailField" class="label-field" style="font-size: 40px; -unity-text-align: middle-left; height: 50px;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="SettingsField" style="padding-left: 50px; padding-right: 50px; background-color: rgb(44, 44, 44); padding-top: 25px; padding-bottom: 25px; margin-bottom: 25px;">
+            <engine:VisualElement name="LabelField" style="height: 75px; flex-direction: row; margin-bottom: 10px;">
+                <engine:Label text="Settings" name="Label" class="label-field" style="-unity-font-style: bold; font-size: 45px; flex-grow: 1; -unity-text-align: middle-left;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="LanguageField" style="flex-direction: row; height: 100px;">
+                <engine:VisualElement name="Icon" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/Language&apos;); background-size: 75% 75%; align-self: center;" />
+                <engine:Label text="Language" name="Label" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; flex-grow: 1;" />
+                <engine:Label text="English" name="Text" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; color: rgb(254, 209, 167);" />
+            </engine:VisualElement>
+            <engine:VisualElement name="LocationField" style="flex-direction: row; height: 100px;">
+                <engine:VisualElement name="Icon" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/Location 1&apos;); background-size: 75% 75%; align-self: center;" />
+                <engine:Label text="Location" name="Label" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; flex-grow: 1;" />
+                <engine:Label text="Ha Noi" name="Text" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; color: rgb(254, 209, 167);" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="InformationsField" style="padding-left: 50px; padding-right: 50px; background-color: rgb(44, 44, 44); padding-top: 25px; padding-bottom: 25px; margin-bottom: 25px;">
+            <engine:VisualElement name="LabelField" style="height: 75px; flex-direction: row; margin-bottom: 10px;">
+                <engine:Label text="Informations" name="Label" class="label-field" style="-unity-font-style: bold; font-size: 45px; flex-grow: 1; -unity-text-align: middle-left;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="QAField" style="flex-direction: row; height: 100px;">
+                <engine:VisualElement name="Icon" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/Q&amp;A&apos;); background-size: 75% 75%; align-self: center;" />
+                <engine:Label text="Q&amp;A" name="Text" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; flex-grow: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="PolicyField" style="flex-direction: row; height: 100px;">
+                <engine:VisualElement name="Icon" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/Shield&apos;); background-size: 75% 75%; align-self: center;" />
+                <engine:Label text="Terms &amp; Privacy Policy" name="Text" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; flex-grow: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="VersionField" style="flex-direction: row; height: 100px;">
+                <engine:VisualElement name="Icon" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/Download&apos;); background-size: 75% 75%; align-self: center;" />
+                <engine:Label text="Version" name="Text" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; flex-grow: 1;" />
+                <engine:Label text="1.0.1" name="Text" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; color: rgb(254, 209, 167);" />
+            </engine:VisualElement>
+            <engine:VisualElement name="ContactField" style="flex-direction: row; height: 100px;">
+                <engine:VisualElement name="Icon" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/At&apos;); background-size: 75% 75%; align-self: center;" />
+                <engine:Label text="Contact Us" name="Text" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; flex-grow: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="SignOutField" style="flex-direction: row; height: 100px;">
+                <engine:VisualElement name="Icon" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/SignOut&apos;); background-size: 75% 75%; align-self: center;" />
+                <engine:Label text="Sign Out" name="Text" class="label-field" style="margin-left: 10px; font-size: 40px; -unity-text-align: middle-left; flex-grow: 1;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:ScrollView>
+</engine:UXML>

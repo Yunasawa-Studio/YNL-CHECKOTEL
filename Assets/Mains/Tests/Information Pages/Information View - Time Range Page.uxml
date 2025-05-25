@@ -1,0 +1,387 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/MainPage.uss?fileID=7433441132597879392&amp;guid=1edcbd6233be03248a6afc0041aeffad&amp;type=3#MainPage" />
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/SearchPageStyle.uss?fileID=7433441132597879392&amp;guid=0cd8c0ceb346c0c40b7657d5278fbb58&amp;type=3#SearchPageStyle" />
+    <engine:VisualElement name="ScreenBackground" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(22, 22, 22, 0.71); position: absolute; top: 0; left: 0; right: 0; bottom: 0; transition-property: background-color; transition-duration: 0.4s;" />
+    <engine:VisualElement name="TimePickingPage" style="flex-grow: 1; position: absolute; top: 100px; right: 0; bottom: 0; left: 0; background-color: rgb(41, 41, 41); padding-right: 50px; padding-left: 50px; padding-top: 25px; border-top-left-radius: 50px; border-top-right-radius: 50px; transition-property: translate; transition-duration: 0.4s; transition-timing-function: ease-out-cubic;">
+        <engine:VisualElement name="StayTypeField" style="min-height: 100px; height: 125px; flex-direction: row; justify-content: space-around;">
+            <engine:Label text="Hourly" name="Hourly" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); color: rgb(254, 209, 167); font-size: 50px; height: 100%; -unity-text-align: middle-left; -unity-font-style: bold; border-left-color: rgb(254, 209, 167); border-right-color: rgb(254, 209, 167); border-top-color: rgb(254, 209, 167); border-bottom-color: rgb(254, 209, 167); border-bottom-width: 5px;" />
+            <engine:Label text="Overnight" name="Overnight" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); color: rgb(255, 255, 255); font-size: 50px; height: 100%; -unity-text-align: middle-left; -unity-font-style: bold; border-bottom-width: 5px;" />
+            <engine:Label text="Daily" name="Daily" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); color: rgb(255, 255, 255); font-size: 50px; height: 100%; -unity-text-align: middle-left; -unity-font-style: bold; border-bottom-width: 5px;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="ResultField" style="min-height: 100px;">
+            <engine:VisualElement name="DividerLine" style="height: 2px; background-color: rgb(115, 115, 115); margin-left: -50px; margin-right: -50px;" />
+            <engine:VisualElement name="TimeField" style="flex-direction: row; height: 100px; margin-top: 20px; margin-bottom: 20px;">
+                <engine:VisualElement name="CheckInField" style="flex-grow: 1; flex-basis: 35%; height: 100px; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-top-width: 0; border-right-width: 2px; border-bottom-width: 0; border-left-width: 0;">
+                    <engine:Label text="Check in" name="Title" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); color: rgb(255, 255, 255); font-size: 35px; height: 50px; -unity-text-align: middle-left;" />
+                    <engine:Label text="22:00, 07/05" name="Time" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); color: rgb(254, 209, 167); font-size: 35px; height: 50px; -unity-text-align: middle-left; -unity-font-style: bold;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="CheckOutField" style="flex-grow: 1; flex-basis: 45%; height: 100px; padding-left: 50px; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-right-width: 2px;">
+                    <engine:Label text="Check out" name="Title" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); color: rgb(255, 255, 255); font-size: 35px; height: 50px; -unity-text-align: middle-left;" />
+                    <engine:Label text="00:00, 08/05" name="Time" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); color: rgb(254, 209, 167); font-size: 35px; height: 50px; -unity-text-align: middle-left; -unity-font-style: bold;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="DurationField" style="flex-grow: 1; flex-basis: 20%; height: 100px; padding-left: 50px;">
+                    <engine:Label text="Duration" name="Title" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); color: rgb(255, 255, 255); font-size: 35px; height: 50px; -unity-text-align: middle-left;" />
+                    <engine:Label text="2 hours" name="Time" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); color: rgb(254, 209, 167); font-size: 35px; height: 50px; -unity-text-align: middle-left; -unity-font-style: bold;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="DividerLine" style="background-color: rgb(115, 115, 115); height: 2px; margin-right: -50px; margin-left: -50px;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="ContentPage" style="flex-grow: 1; margin-top: 20px; margin-bottom: 20px; display: flex;">
+            <engine:VisualElement name="HourlyPage" style="flex-grow: 1; display: flex;">
+                <engine:VisualElement name="CalendarView" style="padding-bottom: 50px; margin-top: 30px; flex-grow: 1; justify-content: center;">
+                    <engine:VisualElement name="MonthField" style="height: 100px; flex-direction: row; margin-bottom: 50px;">
+                        <engine:Label text="May, 2025" name="MonthText" class="label-field" style="-unity-font-style: bold; -unity-text-align: middle-left; flex-grow: 1;" />
+                        <engine:VisualElement name="PreviousMonth" style="height: 100px; width: 100px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Back.png?fileID=2800000&amp;guid=f976b996dba51a04aa5b413340cc432e&amp;type=3#Back&quot;); background-size: 50% 50%; align-self: center; -unity-background-image-tint-color: rgb(85, 85, 85);" />
+                        <engine:VisualElement name="NextMonth" style="height: 100px; width: 100px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Back.png?fileID=2800000&amp;guid=f976b996dba51a04aa5b413340cc432e&amp;type=3#Back&quot;); background-size: 50% 50%; align-self: center; rotate: 180deg;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="WeekdayField" style="height: 100px; flex-direction: row; margin-bottom: 50px;">
+                        <engine:VisualElement style="flex-grow: 1; height: 100px; justify-content: center;">
+                            <engine:Label text="MON" name="Mon" class="label-field" style="-unity-text-align: middle-center; font-size: 40px; height: 75px; width: 100%; align-self: center;" />
+                        </engine:VisualElement>
+                        <engine:Label text="TUE" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="WED" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="THU" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="FRI" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="SAT" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="SUN" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DataGrid" style="height: 550px; display: flex;">
+                        <engine:VisualElement name="WeekdayField" style="height: 100px; flex-direction: row;">
+                            <engine:VisualElement style="flex-grow: 1; justify-content: center;">
+                                <engine:Label name="Mon" text="10" class="label-field" style="-unity-text-align: middle-center; width: 75px; font-size: 40px; height: 75px; align-self: center; background-color: rgb(77, 70, 63); border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; -unity-font-style: bold; color: rgb(254, 209, 167);" />
+                            </engine:VisualElement>
+                            <engine:Label name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="1" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="2" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="3" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="4" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="WeekdayField" style="flex-direction: row; height: 100px;">
+                            <engine:Label text="5" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="6" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="7" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="8" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="9" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="10" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="11" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="WeekdayField" style="flex-direction: row; height: 100px;">
+                            <engine:Label text="12" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="13" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="14" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="15" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="16" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; -unity-font-style: bold; color: rgb(254, 209, 167);" />
+                            <engine:Label text="17" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="18" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="WeekdayField" style="flex-direction: row; height: 100px;">
+                            <engine:Label text="19" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="21" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="22" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="23" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="24" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="25" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="26" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="WeekdayField" style="flex-direction: row; height: 100px;">
+                            <engine:Label text="27" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="28" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="29" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="30" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="31" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; text-overflow: ellipsis;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="DividerLine" style="height: 2px; width: 100%; background-color: rgb(115, 115, 115);" />
+                <engine:VisualElement name="CheckInTimeView" style="height: 300px;">
+                    <engine:Label text="Check in time" class="label-field" style="font-size: 40px; margin-top: 50px; -unity-font-style: bold;" />
+                    <engine:ScrollView mode="Horizontal" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" name="TimeScroll" style="flex-grow: 1; margin-bottom: 30px; margin-top: 0;">
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 200px; background-color: rgb(59, 59, 59); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="04:00" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TimeItem" style="width: 175px; background-color: rgb(77, 70, 63); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center; height: 100px;">
+                            <engine:Label text="05:00" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(254, 209, 167); font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 200px; background-color: rgb(57, 57, 57); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="06:00" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 200px; background-color: rgb(57, 57, 57); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="07:00" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 200px; background-color: rgb(57, 57, 57); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="08:00" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center; font-size: 0;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 200px; background-color: rgb(57, 57, 57); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="04:00" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center;" />
+                        </engine:VisualElement>
+                    </engine:ScrollView>
+                </engine:VisualElement>
+                <engine:VisualElement name="DividerLine" style="height: 2px; width: 100%; background-color: rgb(115, 115, 115);" />
+                <engine:VisualElement name="DurationView" style="height: 300px;">
+                    <engine:Label text="Hours of use" class="label-field" style="font-size: 40px; margin-top: 50px; -unity-font-style: bold;" />
+                    <engine:ScrollView mode="Horizontal" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" name="TimeScroll" style="flex-grow: 1; margin-bottom: 30px; margin-top: 0;">
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 250px; background-color: rgb(57, 57, 57); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="1 hour" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 250px; background-color: rgb(57, 57, 57); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="2 hours" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 225px; background-color: rgb(77, 70, 63); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="3 hours" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(254, 209, 167); font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 250px; background-color: rgb(57, 57, 57); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="4 hours" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TimeItem" style="height: 100px; width: 250px; background-color: rgb(57, 57, 57); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-right: 30px; align-self: center;">
+                            <engine:Label text="2 hours" class="label-field" style="height: 100%; width: 100%; -unity-text-align: middle-center;" />
+                        </engine:VisualElement>
+                    </engine:ScrollView>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="OvernightPage" style="flex-grow: 1; display: none;">
+                <engine:VisualElement name="CalendarView" style="min-height: 1000px; padding-bottom: 50px; margin-top: 30px;">
+                    <engine:VisualElement name="MonthField" style="height: 100px; flex-direction: row; margin-bottom: 50px;">
+                        <engine:Label text="May, 2025" name="MonthText" class="label-field" style="-unity-font-style: bold; -unity-text-align: middle-left; flex-grow: 1;" />
+                        <engine:VisualElement name="PreviousMonth" style="height: 100px; width: 100px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Back.png?fileID=2800000&amp;guid=f976b996dba51a04aa5b413340cc432e&amp;type=3#Back&quot;); background-size: 50% 50%; align-self: center; -unity-background-image-tint-color: rgba(255, 255, 255, 0.2);" />
+                        <engine:VisualElement name="NextMonth" style="height: 100px; width: 100px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Back.png?fileID=2800000&amp;guid=f976b996dba51a04aa5b413340cc432e&amp;type=3#Back&quot;); background-size: 50% 50%; align-self: center; rotate: 180deg;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="WeekdayField" style="height: 100px; flex-direction: row; margin-bottom: 50px;">
+                        <engine:Label text="MON" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="TUE" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="WED" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="THU" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="FRI" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="AST" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        <engine:Label text="SUN" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DataGrid" style="flex-grow: 1;">
+                        <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                            <engine:Label name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="1" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="2" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="3" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="4" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                            <engine:Label text="5" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="6" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="7" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="8" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="9" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="10" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="11" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                            <engine:Label text="12" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="13" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="14" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="15" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="16" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; -unity-font-style: bold; color: rgb(254, 209, 167);" />
+                            <engine:Label text="17" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="18" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                            <engine:Label text="19" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="21" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="22" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="23" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="24" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="25" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="26" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                            <engine:Label text="27" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="28" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="29" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="30" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label text="31" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            <engine:Label name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; text-overflow: ellipsis;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="DailyPage" style="flex-grow: 1; display: none;">
+                <engine:VisualElement name="WeekdayField" style="height: 100px; flex-direction: row; margin-bottom: 10px;">
+                    <engine:Label text="MON" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                    <engine:Label text="TUE" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                    <engine:Label text="WED" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                    <engine:Label text="THU" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                    <engine:Label text="FRI" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                    <engine:Label text="AST" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                    <engine:Label text="SUN" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="DividerLine" style="height: 3px; width: 100%; background-color: rgb(115, 115, 115); margin-bottom: 20px;" />
+                <engine:ScrollView name="CalendarScroll" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" style="flex-grow: 1;">
+                    <engine:VisualElement name="CalendarView" style="padding-bottom: 50px; height: 650px;">
+                        <engine:VisualElement name="MonthField" style="height: 100px; flex-direction: row; margin-bottom: 0;">
+                            <engine:Label text="May, 2025" name="MonthText" class="label-field" style="-unity-font-style: bold; -unity-text-align: middle-left; flex-grow: 1; font-size: 40px; border-left-width: 20px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="DataGrid" style="flex-grow: 1;">
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="1" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="2" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="3" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="4" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="5" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="6" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="7" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="8" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="9" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="10" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="11" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="12" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="13" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="14" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="15" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="16" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; -unity-font-style: bold; color: rgb(254, 209, 167);" />
+                                <engine:Label text="17" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="18" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="19" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="21" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="22" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="23" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="24" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="25" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="26" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="27" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="28" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="29" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="30" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="31" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; text-overflow: ellipsis;" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="CalendarView" style="padding-bottom: 50px; height: 650px;">
+                        <engine:VisualElement name="MonthField" style="height: 100px; flex-direction: row; margin-bottom: 0;">
+                            <engine:Label text="May, 2025" name="MonthText" class="label-field" style="-unity-font-style: bold; -unity-text-align: middle-left; flex-grow: 1; font-size: 40px; border-left-width: 20px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="DataGrid" style="flex-grow: 1;">
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="1" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="2" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="3" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="4" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="5" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="6" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="7" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="8" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="9" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="10" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="11" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="12" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="13" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="14" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="15" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="16" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; -unity-font-style: bold; color: rgb(254, 209, 167);" />
+                                <engine:Label text="17" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="18" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="19" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="21" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="22" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="23" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="24" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="25" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="26" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="27" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="28" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="29" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="30" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="31" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; text-overflow: ellipsis;" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="CalendarView" style="padding-bottom: 50px; height: 650px;">
+                        <engine:VisualElement name="MonthField" style="height: 100px; flex-direction: row; margin-bottom: 0;">
+                            <engine:Label text="May, 2025" name="MonthText" class="label-field" style="-unity-font-style: bold; -unity-text-align: middle-left; flex-grow: 1; font-size: 40px; border-left-width: 20px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="DataGrid" style="flex-grow: 1;">
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="1" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="2" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="3" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="4" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="5" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="6" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="7" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="8" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="9" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="10" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="11" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="12" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="13" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="14" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="15" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="16" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; -unity-font-style: bold; color: rgb(254, 209, 167);" />
+                                <engine:Label text="17" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="18" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="19" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="21" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="22" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="23" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="24" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="25" name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="26" name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="WeekdayField" style="flex-direction: row; flex-grow: 1;">
+                                <engine:Label text="27" name="Mon" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="28" name="Tue" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="29" name="Wed" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="30" name="Thu" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label text="31" name="Fri" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Sat" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px;" />
+                                <engine:Label name="Sun" class="label-field" style="-unity-text-align: middle-center; width: 140px; font-size: 40px; text-overflow: ellipsis;" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:ScrollView>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="DividerLine" style="height: 3px; background-color: rgb(115, 115, 115); margin-left: -50px; margin-right: -50px;" />
+        <engine:VisualElement name="ToolBar" style="flex-direction: row; margin-bottom: 30px; margin-top: 20px; min-height: 120px;">
+            <engine:VisualElement name="ApplyButton" style="flex-grow: 1; margin-top: 20px; margin-bottom: 20px; margin-left: 15px; margin-right: 0; background-color: rgb(254, 209, 167); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; flex-basis: 50%;">
+                <engine:Label text="Apply" name="Label" class="label-field" style="height: 100%; -unity-text-align: middle-center; color: rgb(41, 41, 41); -unity-font-style: bold; font-size: 40px;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

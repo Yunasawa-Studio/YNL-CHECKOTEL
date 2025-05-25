@@ -1,0 +1,93 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/SigningPageStyle.uss?fileID=7433441132597879392&amp;guid=3d898daa5f70b3840a09a6a12403af2c&amp;type=3#SigningPageStyle" />
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/MainPage.uss?fileID=7433441132597879392&amp;guid=1edcbd6233be03248a6afc0041aeffad&amp;type=3#MainPage" />
+    <engine:VisualElement name="ScreenBackground" style="flex-grow: 1; background-color: rgb(41, 41, 41); position: absolute; width: 100%; height: 100%;" />
+    <engine:VisualElement name="TopBar" style="padding-right: 50px; padding-left: 50px; padding-top: 100px; padding-bottom: 50px; border-left-color: rgb(61, 61, 61); border-right-color: rgb(61, 61, 61); border-top-color: rgb(61, 61, 61); border-bottom-color: rgb(61, 61, 61); border-bottom-width: 2px; border-top-width: 0; border-right-width: 0; border-left-width: 0; flex-shrink: 0;">
+        <engine:VisualElement name="LabelField" style="flex-grow: 1; height: 100px; margin-bottom: 25px;">
+            <engine:VisualElement name="CloseButton" style="position: absolute; height: 100px; width: 50px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Back.png?fileID=2800000&amp;guid=f976b996dba51a04aa5b413340cc432e&amp;type=3#Back&quot;); background-size: 50% 50%; -unity-background-scale-mode: scale-to-fit;" />
+            <engine:Label text="Reviews &amp; Ratings" name="LabelTitle" style="height: 100px; width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito%20SDF.asset?fileID=11400000&amp;guid=995852a4f5cc55e4e89fa1e7e897eac5&amp;type=2#Nunito SDF&quot;); -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-align: middle-center; font-size: 60px;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="RatingView" style="height: 250px; background-color: rgb(47, 47, 47); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; flex-direction: row;">
+            <engine:VisualElement name="RatingField" style="height: 250px; width: 300px; justify-content: center;">
+                <engine:Label text="4.9" name="RatingText" class="label-field" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 75px; height: 100px;" />
+                <engine:Label text="Exceptional" name="RankText" class="label-field" style="-unity-text-align: middle-center; font-size: 35px; height: 50px;" />
+                <engine:Label text="1206 reviews" name="AmountText" class="label-field" style="-unity-text-align: middle-center; font-size: 25px; height: 40px; color: rgb(138, 138, 138);" />
+            </engine:VisualElement>
+            <engine:VisualElement name="DividerLine" style="background-color: rgb(76, 76, 76); width: 2px; margin-top: 25px; margin-bottom: 25px;" />
+            <engine:VisualElement name="ScoreView" style="height: 250px; width: 300px; justify-content: space-around; flex-grow: 1; padding-top: 25px; padding-bottom: 25px;">
+                <engine:VisualElement name="CleanlinessScore" style="height: 50px; flex-direction: row; padding-right: 25px; padding-left: 25px;">
+                    <engine:VisualElement name="Icon" style="width: 40px; height: 100%; background-image: resource(&apos;Icons/Family (Filled)&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 10px;" />
+                    <engine:Label text="Cleanliness" name="Label" class="label-field" style="height: 100%; font-size: 40px; padding-left: 10px; width: 225px; -unity-text-align: middle-left;" />
+                    <engine:VisualElement name="ScoreLine" style="flex-grow: 1; height: 10px; flex-direction: row; align-self: center; background-color: rgb(64, 64, 64); margin-left: 20px; margin-right: 20px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                        <engine:VisualElement name="LineFill" style="width: 50%; height: 10px; background-color: rgb(254, 209, 167); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+                    </engine:VisualElement>
+                    <engine:Label text="4.9" name="ScoreText" class="label-field" style="font-size: 40px; width: 60px; -unity-text-align: middle-right; height: 100%;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="FacilitiesScore" style="height: 50px; flex-direction: row; padding-right: 25px; padding-left: 25px;">
+                    <engine:VisualElement name="Icon" style="width: 40px; height: 100%; background-image: resource(&apos;Icons/Settings&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 10px;" />
+                    <engine:Label text="Facilities" name="Label" class="label-field" style="height: 100%; font-size: 40px; padding-left: 10px; width: 225px; -unity-text-align: middle-left;" />
+                    <engine:VisualElement name="ScoreLine" style="flex-grow: 1; height: 10px; flex-direction: row; align-self: center; background-color: rgb(64, 64, 64); margin-left: 20px; margin-right: 20px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                        <engine:VisualElement name="LineFill" style="width: 50%; height: 10px; background-color: rgb(254, 209, 167); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+                    </engine:VisualElement>
+                    <engine:Label text="4.9" name="ScoreText" class="label-field" style="font-size: 40px; width: 60px; -unity-text-align: middle-right; height: 100%;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ServiceScore" style="height: 50px; flex-direction: row; padding-right: 25px; padding-left: 25px;">
+                    <engine:VisualElement name="Icon" style="width: 40px; height: 100%; background-image: resource(&apos;Icons/Service&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 10px;" />
+                    <engine:Label text="Service" name="Label" class="label-field" style="height: 100%; font-size: 40px; padding-left: 10px; width: 225px; -unity-text-align: middle-left;" />
+                    <engine:VisualElement name="ScoreLine" style="flex-grow: 1; height: 10px; flex-direction: row; align-self: center; background-color: rgb(64, 64, 64); margin-left: 20px; margin-right: 20px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                        <engine:VisualElement name="LineFill" style="width: 50%; height: 10px; background-color: rgb(254, 209, 167); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+                    </engine:VisualElement>
+                    <engine:Label text="4.9" name="ScoreText" class="label-field" style="font-size: 40px; width: 60px; -unity-text-align: middle-right; height: 100%;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="FilterField" style="height: 100px; background-color: rgb(47, 47, 47); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; flex-direction: row; margin-top: 25px; display: none;" />
+    </engine:VisualElement>
+    <engine:ScrollView name="ContentScroll" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="Hidden" style="padding-right: 50px; padding-left: 50px; flex-grow: 1; display: flex;">
+        <engine:VisualElement name="ReviewItem" style="padding-top: 0; padding-right: 25px; padding-left: 25px; padding-bottom: 15px;">
+            <engine:VisualElement name="ReviewItem" style="background-color: rgb(48, 48, 48); border-left-color: rgb(96, 96, 96); border-right-color: rgb(96, 96, 96); border-top-color: rgb(96, 96, 96); border-bottom-color: rgb(96, 96, 96); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; position: absolute; top: 25px; right: 0; left: 0; bottom: 0;" />
+            <engine:VisualElement name="InfoField" style="height: 75px; flex-direction: row; min-height: 75px; margin-top: 50px;">
+                <engine:VisualElement name="AccountPicture" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/Account&apos;); align-self: center; background-color: rgb(59, 59, 59); border-top-left-radius: 37.5px; border-top-right-radius: 37.5px; border-bottom-right-radius: 37.5px; border-bottom-left-radius: 37.5px; background-size: 60% 60%; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(96, 96, 96); border-right-color: rgb(96, 96, 96); border-top-color: rgb(96, 96, 96); border-bottom-color: rgb(96, 96, 96);" />
+                <engine:Label text="Sam Winchester&#10;&lt;size=35&gt;&lt;color=#808080&gt;Room 302&lt;/color&gt;&lt;/size&gt;" name="AccountText" class="label-field" style="font-size: 40px; margin-left: 15px; flex-grow: 1; -unity-paragraph-spacing: -15px; -unity-text-align: middle-left; height: 100%;" />
+                <engine:VisualElement name="StarField" style="height: 100%; flex-direction: row; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;">
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star (Filled)&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star (Filled)&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star (Filled)&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star (Half)&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:Label text="I had a wonderful stay at this hotel! The staff were incredibly welcoming and attentive, ensuring every aspect of my visit was comfortable. The rooms were clean and well-maintained, offering a relaxing atmosphere. The location was convenient, making it easy to explore nearby attractions. The amenities, from the delicious breakfast to the well-equipped facilities, exceeded my expectations. I would definitely recommend this hotel to anyone looking for a pleasant and hassle-free stay!" name="Comment" class="label-field" style="flex-grow: 1; font-size: 35px; margin-top: 25px; -unity-text-align: middle-left; white-space: normal;" />
+            <engine:VisualElement name="ToolFIeld" style="height: 40px; margin-top: 25px; flex-direction: row;">
+                <engine:Label text="Created on 12/05" name="TimeStamp" class="label-field" style="-unity-text-align: middle-left; font-size: 30px; height: 100%; color: rgb(128, 128, 128); flex-grow: 1;" />
+                <engine:VisualElement name="LikeField" style="width: 150px; height: 100%; flex-direction: row-reverse;">
+                    <engine:Label text="1,203" name="Amount" class="label-field" style="-unity-text-align: middle-left; font-size: 30px; -unity-font-style: bold;" />
+                    <engine:VisualElement name="Icon" style="height: 40px; width: 40px; background-image: resource(&apos;Icons/Heart (Filled)&apos;); margin-left: 10px; margin-right: 10px; -unity-background-image-tint-color: rgb(255, 64, 64);" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="ReviewItem" style="padding-top: 50px; padding-right: 25px; padding-left: 25px; padding-bottom: 15px;">
+            <engine:VisualElement name="ReviewItem" style="background-color: rgb(48, 48, 48); border-left-color: rgb(96, 96, 96); border-right-color: rgb(96, 96, 96); border-top-color: rgb(96, 96, 96); border-bottom-color: rgb(96, 96, 96); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; position: absolute; top: 25px; right: 0; left: 0; bottom: 0;" />
+            <engine:VisualElement name="InfoField" style="height: 75px; flex-direction: row; min-height: 75px;">
+                <engine:VisualElement name="AccountPicture" style="height: 75px; width: 75px; background-image: resource(&apos;Icons/Account&apos;); align-self: center; background-color: rgb(59, 59, 59); border-top-left-radius: 37.5px; border-top-right-radius: 37.5px; border-bottom-right-radius: 37.5px; border-bottom-left-radius: 37.5px; background-size: 60% 60%; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(96, 96, 96); border-right-color: rgb(96, 96, 96); border-top-color: rgb(96, 96, 96); border-bottom-color: rgb(96, 96, 96);" />
+                <engine:Label text="Sam Winchester&#10;&lt;size=35&gt;&lt;color=#808080&gt;Room 302&lt;/color&gt;&lt;/size&gt;" name="AccountText" class="label-field" style="font-size: 40px; margin-left: 15px; flex-grow: 1; -unity-paragraph-spacing: -15px; -unity-text-align: middle-left; height: 100%;" />
+                <engine:VisualElement name="StarField" style="height: 100%; flex-direction: row; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;">
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star (Filled)&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star (Filled)&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star (Filled)&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star (Half)&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                    <engine:VisualElement name="Star" style="background-image: resource(&apos;Icons/Star&apos;); height: 35px; width: 35px; -unity-background-image-tint-color: rgb(251, 194, 60); margin-left: 5px;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:Label text="I had a wonderful stay at this hotel! The staff were incredibly welcoming and attentive, ensuring every aspect of my visit was comfortable. The rooms were clean and well-maintained, offering a relaxing atmosphere. The location was convenient, making it easy to explore nearby attractions. The amenities, from the delicious breakfast to the well-equipped facilities, exceeded my expectations. I would definitely recommend this hotel to anyone looking for a pleasant and hassle-free stay!" name="Comment" class="label-field" style="flex-grow: 1; font-size: 35px; margin-top: 25px; -unity-text-align: middle-left; white-space: normal;" />
+            <engine:VisualElement name="ToolFIeld" style="height: 40px; margin-top: 25px; flex-direction: row;">
+                <engine:Label text="Created on 12/05" name="TimeStamp" class="label-field" style="-unity-text-align: middle-left; font-size: 30px; height: 100%; color: rgb(128, 128, 128); flex-grow: 1;" />
+                <engine:VisualElement name="LikeField" style="width: 150px; height: 100%; flex-direction: row-reverse;">
+                    <engine:Label text="1,203" name="Amount" class="label-field" style="-unity-text-align: middle-left; font-size: 30px; -unity-font-style: bold;" />
+                    <engine:VisualElement name="Icon" style="height: 40px; width: 40px; background-image: resource(&apos;Icons/Heart&apos;); margin-left: 10px; margin-right: 10px; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:ScrollView>
+    <engine:ListView name="ContentList" style="flex-grow: 1; padding-right: 50px; padding-left: 50px;" />
+</engine:UXML>

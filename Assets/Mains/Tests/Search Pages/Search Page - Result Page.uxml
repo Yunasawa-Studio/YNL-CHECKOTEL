@@ -1,0 +1,158 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/MainPage.uss?fileID=7433441132597879392&amp;guid=1edcbd6233be03248a6afc0041aeffad&amp;type=3#MainPage" />
+    <Style src="project://database/Assets/Mains/Resources/Style%20Sheets/SearchPageStyle.uss?fileID=7433441132597879392&amp;guid=0cd8c0ceb346c0c40b7657d5278fbb58&amp;type=3#SearchPageStyle" />
+    <engine:VisualElement name="ScreenBackground" style="flex-grow: 1; background-color: rgb(41, 41, 41); position: absolute; width: 100%; height: 100%;" />
+    <engine:VisualElement name="SearchingResultPage" style="flex-grow: 1; padding-top: 100px; padding-right: 50px; padding-left: 50px;">
+        <engine:VisualElement name="SearchBar" style="height: 150px; flex-direction: row; margin-bottom: 20px; min-height: 150px;">
+            <engine:VisualElement name="BackIcon" style="height: 100px; width: 50px; align-self: center; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Back.png?fileID=2800000&amp;guid=f976b996dba51a04aa5b413340cc432e&amp;type=3#Back&quot;); -unity-background-scale-mode: scale-to-fit; margin-right: 50px;" />
+            <engine:VisualElement name="SearchField" class="frame-border" style="height: 120px; flex-direction: row; align-self: center; flex-grow: 1; border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-right-radius: 60px; border-bottom-left-radius: 60px; background-color: rgb(48, 48, 48);">
+                <engine:VisualElement name="SearchIcon" style="height: 100px; width: 100px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Search.png?fileID=2800000&amp;guid=fad657acf0daba94ba6e8dd03c901823&amp;type=3#Search&quot;); background-size: 60% 60%; align-self: center;" />
+                <engine:Label text="&lt;b&gt;Anywhere&lt;/b&gt;&#10;&lt;size=35&gt;Hourly • Anytime&lt;/size&gt;" name="SearchText" class="label-field" style="font-size: 40px; -unity-text-align: middle-left;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="DividerLine" style="background-color: rgb(115, 115, 115); height: 2px; margin-right: -50px; margin-left: -50px;" />
+        <engine:VisualElement name="ResultField" style="flex-direction: row; margin-bottom: 20px; margin-top: 20px; height: 50px; min-height: 50px;">
+            <engine:VisualElement name="SortingButton" style="flex-basis: 50%; flex-direction: row; height: 50px; justify-content: center;">
+                <engine:VisualElement name="Icon" style="height: 100%; width: 60px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Sort.png?fileID=2800000&amp;guid=30075bd2854770c49b0d1bf61f11b879&amp;type=3#Sort&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                <engine:Label text="Sort" name="Title" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 20px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); font-size: 35px; height: 100%; -unity-text-align: middle-left; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+            </engine:VisualElement>
+            <engine:VisualElement name="DividerLine" style="background-color: rgb(115, 115, 115); width: 2px;" />
+            <engine:VisualElement name="FilteringButton" style="flex-basis: 50%; flex-direction: row; height: 50px; justify-content: center;">
+                <engine:VisualElement name="Icon" style="height: 100%; width: 60px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Filter.png?fileID=2800000&amp;guid=1653bcfcc395dd144b890a1cde8c6670&amp;type=3#Filter&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                <engine:Label text="Filter" name="Title" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 20px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Mains/Resources/Fonts/SDFs/Nunito/Nunito-Regular%20SDF.asset?fileID=11400000&amp;guid=999150e03acf5b941a2f08bde59b51ae&amp;type=2#Nunito-Regular SDF&quot;); font-size: 35px; height: 100%; -unity-text-align: middle-left; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="DividerLine" style="background-color: rgb(115, 115, 115); height: 2px; margin-right: -50px; margin-left: -50px;" />
+        <engine:ScrollView name="ResultScroll" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="Hidden" style="flex-grow: 1; margin-top: 50px;">
+            <engine:VisualElement name="ResultItem" style="height: 650px; background-color: rgb(59, 59, 59); border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; overflow: hidden; margin-bottom: 50px;">
+                <engine:VisualElement name="PreviewImage" style="height: 350px; background-image: resource(&apos;Images/Samples/Ocean Breeze Resort&apos;); -unity-background-scale-mode: scale-and-crop; border-top-width: 2px; border-right-width: 2px; border-left-width: 2px; border-left-color: rgb(59, 59, 59); border-right-color: rgb(59, 59, 59); border-top-color: rgb(59, 59, 59); border-bottom-color: rgb(59, 59, 59);">
+                    <engine:VisualElement name="HotField" style="position: absolute; height: 50px; background-color: rgb(236, 78, 64); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding-right: 10px; padding-left: 7.5px; bottom: 30px; left: 30px; flex-direction: row;">
+                        <engine:VisualElement name="Icon" style="height: 100%; width: 40px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Trending.png?fileID=2800000&amp;guid=33c159585fc7d5940b38da57d5dd16e6&amp;type=3#Trending&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <engine:Label text="Hot" name="Text" class="label-field" style="font-size: 40px; margin-left: 5px; -unity-text-align: middle-left;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="InfoArea" style="flex-grow: 1; padding-left: 30px; padding-right: 30px; padding-top: 20px; padding-bottom: 20px;">
+                    <engine:VisualElement name="NameField" style="height: 75px; flex-direction: row;">
+                        <engine:Label text="Ami House" name="NameField" class="label-field" style="-unity-font-style: bold; flex-grow: 1;" />
+                        <engine:VisualElement name="RatingField" style="flex-direction: row;">
+                            <engine:VisualElement name="Icon" style="-unity-background-image-tint-color: rgb(255, 225, 42); background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Star%20(Filled).png?fileID=2800000&amp;guid=ce0be4c42e3056f44a239c5c6f5cfff8&amp;type=3#Star (Filled)&quot;); height: 100%; width: 35px; -unity-background-scale-mode: scale-to-fit; translate: 0 -5px;" />
+                            <engine:Label text="&lt;b&gt;4.5&lt;/b&gt; (102)" name="Rating" class="label-field" style="font-size: 35px; -unity-text-align: middle-left; margin-left: 10px;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="AddressField" style="height: 30px; flex-direction: row; margin-bottom: 10px;">
+                        <engine:VisualElement name="Icon" style="height: 100%; width: 25px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Location%20(Filled).png?fileID=2800000&amp;guid=d2ce7ccd45513574baf5eaaf551b591c&amp;type=3#Location (Filled)&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <engine:Label text="120 Locust Ln, Schoharie, New York, USA" name="Address" class="label-field" style="font-size: 35px; -unity-text-align: middle-left; margin-left: 5px; flex-grow: 1;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="Space" style="flex-grow: 1;" />
+                    <engine:VisualElement name="PriceField" style="margin-top: 10px; height: 110px;">
+                        <engine:VisualElement name="OriginalField" style="flex-direction: row; height: 50px;">
+                            <engine:Label text="Only &lt;s&gt;9.99$&lt;/s&gt;" name="OriginalPrice" class="label-field" style="font-size: 35px; margin-right: 20px; -unity-text-align: middle-center;" />
+                            <engine:VisualElement name="DiscountField" style="flex-direction: row; padding-right: 10px; padding-left: 5px; background-color: rgb(254, 209, 167); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <engine:VisualElement style="width: 30px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Discount.png?fileID=2800000&amp;guid=5a10d3b671d96cc4eb6642db420a83ad&amp;type=3#Discount&quot;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(59, 59, 59); margin-right: 5px; margin-left: 5px;" />
+                                <engine:Label text="Discount 20%" class="label-field" style="font-size: 30px; margin-left: 10px; color: rgb(59, 59, 59); -unity-text-align: middle-left; -unity-font-style: bold;" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:Label text="&lt;b&gt;&lt;color=#FED1A7&gt;7.99$&lt;/color&gt;&lt;/b&gt; &lt;size=45&gt;/ 2 hours • &lt;color=#75caff&gt;Only 1 room left&lt;/color&gt;&lt;/size&gt;" name="LastPrice" class="label-field" style="height: 60px; -unity-text-align: middle-left; font-size: 50px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="ResultItem" style="height: 650px; background-color: rgb(59, 59, 59); border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; overflow: hidden; margin-bottom: 50px;">
+                <engine:VisualElement name="PreviewImage" style="height: 350px; background-image: resource(&apos;Images/Samples/Ocean Breeze Resort&apos;); -unity-background-scale-mode: scale-and-crop; border-top-width: 2px; border-right-width: 2px; border-left-width: 2px; border-left-color: rgb(59, 59, 59); border-right-color: rgb(59, 59, 59); border-top-color: rgb(59, 59, 59); border-bottom-color: rgb(59, 59, 59);">
+                    <engine:VisualElement name="HotField" style="position: absolute; height: 50px; background-color: rgb(236, 78, 64); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding-right: 10px; padding-left: 7.5px; bottom: 30px; left: 30px; flex-direction: row;">
+                        <engine:VisualElement name="Icon" style="height: 100%; width: 40px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Trending.png?fileID=2800000&amp;guid=33c159585fc7d5940b38da57d5dd16e6&amp;type=3#Trending&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <engine:Label text="Hot" name="Text" class="label-field" style="font-size: 40px; margin-left: 5px; -unity-text-align: middle-left;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="InfoArea" style="flex-grow: 1; padding-left: 30px; padding-right: 30px; padding-top: 20px; padding-bottom: 20px;">
+                    <engine:VisualElement name="NameField" style="height: 75px; flex-direction: row;">
+                        <engine:Label text="Ami House" name="NameField" class="label-field" style="-unity-font-style: bold; flex-grow: 1;" />
+                        <engine:VisualElement name="RatingField" style="flex-direction: row;">
+                            <engine:VisualElement name="Icon" style="-unity-background-image-tint-color: rgb(255, 225, 42); background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Star%20(Filled).png?fileID=2800000&amp;guid=ce0be4c42e3056f44a239c5c6f5cfff8&amp;type=3#Star (Filled)&quot;); height: 100%; width: 35px; -unity-background-scale-mode: scale-to-fit; translate: 0 -5px;" />
+                            <engine:Label text="&lt;b&gt;4.5&lt;/b&gt; (102)" name="Rating" class="label-field" style="font-size: 35px; -unity-text-align: middle-left; margin-left: 10px;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="AddressField" style="height: 30px; flex-direction: row; margin-bottom: 10px;">
+                        <engine:VisualElement name="Icon" style="height: 100%; width: 25px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Location%20(Filled).png?fileID=2800000&amp;guid=d2ce7ccd45513574baf5eaaf551b591c&amp;type=3#Location (Filled)&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <engine:Label text="120 Locust Ln, Schoharie, New York, USA" name="Address" class="label-field" style="font-size: 35px; -unity-text-align: middle-left; margin-left: 5px; flex-grow: 1;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="Space" style="flex-grow: 1;" />
+                    <engine:VisualElement name="PriceField" style="margin-top: 10px; height: 110px;">
+                        <engine:VisualElement name="OriginalField" style="flex-direction: row; height: 50px;">
+                            <engine:Label text="Only &lt;s&gt;9.99$&lt;/s&gt;" name="OriginalPrice" class="label-field" style="font-size: 35px; margin-right: 20px; -unity-text-align: middle-center;" />
+                            <engine:VisualElement name="DiscountField" style="flex-direction: row; padding-right: 10px; padding-left: 5px; background-color: rgb(254, 209, 167); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <engine:VisualElement style="width: 30px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Discount.png?fileID=2800000&amp;guid=5a10d3b671d96cc4eb6642db420a83ad&amp;type=3#Discount&quot;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(59, 59, 59); margin-right: 5px; margin-left: 5px;" />
+                                <engine:Label text="Discount 20%" class="label-field" style="font-size: 30px; margin-left: 10px; color: rgb(59, 59, 59); -unity-text-align: middle-left; -unity-font-style: bold;" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:Label text="&lt;b&gt;&lt;color=#FED1A7&gt;7.99$&lt;/color&gt;&lt;/b&gt; &lt;size=45&gt;/ 2 hours • &lt;color=#75caff&gt;Only 1 room left&lt;/color&gt;&lt;/size&gt;" name="LastPrice" class="label-field" style="height: 60px; -unity-text-align: middle-left; font-size: 50px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="ResultItem" style="height: 650px; background-color: rgb(59, 59, 59); border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; overflow: hidden; margin-bottom: 50px;">
+                <engine:VisualElement name="PreviewImage" style="height: 350px; background-image: resource(&apos;Images/Samples/Ocean Breeze Resort&apos;); -unity-background-scale-mode: scale-and-crop; border-top-width: 2px; border-right-width: 2px; border-left-width: 2px; border-left-color: rgb(59, 59, 59); border-right-color: rgb(59, 59, 59); border-top-color: rgb(59, 59, 59); border-bottom-color: rgb(59, 59, 59);">
+                    <engine:VisualElement name="HotField" style="position: absolute; height: 50px; background-color: rgb(236, 78, 64); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding-right: 10px; padding-left: 7.5px; bottom: 30px; left: 30px; flex-direction: row;">
+                        <engine:VisualElement name="Icon" style="height: 100%; width: 40px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Trending.png?fileID=2800000&amp;guid=33c159585fc7d5940b38da57d5dd16e6&amp;type=3#Trending&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <engine:Label text="Hot" name="Text" class="label-field" style="font-size: 40px; margin-left: 5px; -unity-text-align: middle-left;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="InfoArea" style="flex-grow: 1; padding-left: 30px; padding-right: 30px; padding-top: 20px; padding-bottom: 20px;">
+                    <engine:VisualElement name="NameField" style="height: 75px; flex-direction: row;">
+                        <engine:Label text="Ami House" name="NameField" class="label-field" style="-unity-font-style: bold; flex-grow: 1;" />
+                        <engine:VisualElement name="RatingField" style="flex-direction: row;">
+                            <engine:VisualElement name="Icon" style="-unity-background-image-tint-color: rgb(255, 225, 42); background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Star%20(Filled).png?fileID=2800000&amp;guid=ce0be4c42e3056f44a239c5c6f5cfff8&amp;type=3#Star (Filled)&quot;); height: 100%; width: 35px; -unity-background-scale-mode: scale-to-fit; translate: 0 -5px;" />
+                            <engine:Label text="&lt;b&gt;4.5&lt;/b&gt; (102)" name="Rating" class="label-field" style="font-size: 35px; -unity-text-align: middle-left; margin-left: 10px;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="AddressField" style="height: 30px; flex-direction: row; margin-bottom: 10px;">
+                        <engine:VisualElement name="Icon" style="height: 100%; width: 25px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Location%20(Filled).png?fileID=2800000&amp;guid=d2ce7ccd45513574baf5eaaf551b591c&amp;type=3#Location (Filled)&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <engine:Label text="120 Locust Ln, Schoharie, New York, USA" name="Address" class="label-field" style="font-size: 35px; -unity-text-align: middle-left; margin-left: 5px; flex-grow: 1;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="Space" style="flex-grow: 1;" />
+                    <engine:VisualElement name="PriceField" style="margin-top: 10px; height: 110px;">
+                        <engine:VisualElement name="OriginalField" style="flex-direction: row; height: 50px;">
+                            <engine:Label text="Only &lt;s&gt;9.99$&lt;/s&gt;" name="OriginalPrice" class="label-field" style="font-size: 35px; margin-right: 20px; -unity-text-align: middle-center;" />
+                            <engine:VisualElement name="DiscountField" style="flex-direction: row; padding-right: 10px; padding-left: 5px; background-color: rgb(254, 209, 167); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <engine:VisualElement style="width: 30px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Discount.png?fileID=2800000&amp;guid=5a10d3b671d96cc4eb6642db420a83ad&amp;type=3#Discount&quot;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(59, 59, 59); margin-right: 5px; margin-left: 5px;" />
+                                <engine:Label text="Discount 20%" class="label-field" style="font-size: 30px; margin-left: 10px; color: rgb(59, 59, 59); -unity-text-align: middle-left; -unity-font-style: bold;" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:Label text="&lt;b&gt;&lt;color=#FED1A7&gt;7.99$&lt;/color&gt;&lt;/b&gt; &lt;size=45&gt;/ 2 hours • &lt;color=#75caff&gt;Only 1 room left&lt;/color&gt;&lt;/size&gt;" name="LastPrice" class="label-field" style="height: 60px; -unity-text-align: middle-left; font-size: 50px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="ResultItem" style="height: 650px; background-color: rgb(59, 59, 59); border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; overflow: hidden; margin-bottom: 50px;">
+                <engine:VisualElement name="PreviewImage" style="height: 350px; background-image: resource(&apos;Images/Samples/Ocean Breeze Resort&apos;); -unity-background-scale-mode: scale-and-crop; border-top-width: 2px; border-right-width: 2px; border-left-width: 2px; border-left-color: rgb(59, 59, 59); border-right-color: rgb(59, 59, 59); border-top-color: rgb(59, 59, 59); border-bottom-color: rgb(59, 59, 59);">
+                    <engine:VisualElement name="HotField" style="position: absolute; height: 50px; background-color: rgb(236, 78, 64); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding-right: 10px; padding-left: 7.5px; bottom: 30px; left: 30px; flex-direction: row;">
+                        <engine:VisualElement name="Icon" style="height: 100%; width: 40px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Trending.png?fileID=2800000&amp;guid=33c159585fc7d5940b38da57d5dd16e6&amp;type=3#Trending&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <engine:Label text="Hot" name="Text" class="label-field" style="font-size: 40px; margin-left: 5px; -unity-text-align: middle-left;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="InfoArea" style="flex-grow: 1; padding-left: 30px; padding-right: 30px; padding-top: 20px; padding-bottom: 20px;">
+                    <engine:VisualElement name="NameField" style="height: 75px; flex-direction: row;">
+                        <engine:Label text="Ami House" name="NameField" class="label-field" style="-unity-font-style: bold; flex-grow: 1;" />
+                        <engine:VisualElement name="RatingField" style="flex-direction: row;">
+                            <engine:VisualElement name="Icon" style="-unity-background-image-tint-color: rgb(255, 225, 42); background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Star%20(Filled).png?fileID=2800000&amp;guid=ce0be4c42e3056f44a239c5c6f5cfff8&amp;type=3#Star (Filled)&quot;); height: 100%; width: 35px; -unity-background-scale-mode: scale-to-fit; translate: 0 -5px;" />
+                            <engine:Label text="&lt;b&gt;4.5&lt;/b&gt; (102)" name="Rating" class="label-field" style="font-size: 35px; -unity-text-align: middle-left; margin-left: 10px;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="AddressField" style="height: 30px; flex-direction: row; margin-bottom: 10px;">
+                        <engine:VisualElement name="Icon" style="height: 100%; width: 25px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Location%20(Filled).png?fileID=2800000&amp;guid=d2ce7ccd45513574baf5eaaf551b591c&amp;type=3#Location (Filled)&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <engine:Label text="120 Locust Ln, Schoharie, New York, USA" name="Address" class="label-field" style="font-size: 35px; -unity-text-align: middle-left; margin-left: 5px; flex-grow: 1;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="Space" style="flex-grow: 1;" />
+                    <engine:VisualElement name="PriceField" style="margin-top: 10px; height: 110px;">
+                        <engine:VisualElement name="OriginalField" style="flex-direction: row; height: 50px;">
+                            <engine:Label text="Only &lt;s&gt;9.99$&lt;/s&gt;" name="OriginalPrice" class="label-field" style="font-size: 35px; margin-right: 20px; -unity-text-align: middle-center;" />
+                            <engine:VisualElement name="DiscountField" style="flex-direction: row; padding-right: 10px; padding-left: 5px; background-color: rgb(254, 209, 167); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <engine:VisualElement style="width: 30px; background-image: url(&quot;project://database/Assets/Mains/Resources/Icons/Discount.png?fileID=2800000&amp;guid=5a10d3b671d96cc4eb6642db420a83ad&amp;type=3#Discount&quot;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(59, 59, 59); margin-right: 5px; margin-left: 5px;" />
+                                <engine:Label text="Discount 20%" class="label-field" style="font-size: 30px; margin-left: 10px; color: rgb(59, 59, 59); -unity-text-align: middle-left; -unity-font-style: bold;" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:Label text="&lt;b&gt;&lt;color=#FED1A7&gt;7.99$&lt;/color&gt;&lt;/b&gt; &lt;size=45&gt;/ 2 hours • &lt;color=#75caff&gt;Only 1 room left&lt;/color&gt;&lt;/size&gt;" name="LastPrice" class="label-field" style="height: 60px; -unity-text-align: middle-left; font-size: 50px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:ScrollView>
+        <engine:Label text="Sorry, we couldn&apos;t find anything matching your search. (◞‸◟,) " enable-rich-text="false" name="EmptyResultLabel" class="label-field" style="white-space: normal; -unity-text-align: middle-center; font-size: 45px; color: rgb(138, 138, 138); height: 300px; padding-right: 50px; padding-left: 50px; display: none;" />
+    </engine:VisualElement>
+</engine:UXML>
