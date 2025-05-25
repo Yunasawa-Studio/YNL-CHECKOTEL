@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7240d5bf7f8944ca370d85a4c5e3a3, type: 3}
+  m_Name: RuntimePropertiesSO
+  m_EditorClassIdentifier: 
+  Data:
+    AccountID:
+      _id: 0
+    SearchingAddressHistory: []
+    LikedFeedbacks:
+      _keys: []
+      _values: []
+    FavoriteHotels: []
+    StayType: 0
+    Duration: 1
+    BookedRooms:
+      _keys:
+      - _id: 10000000
+      _values:
+      - Rooms:
+        - _id: 30000000

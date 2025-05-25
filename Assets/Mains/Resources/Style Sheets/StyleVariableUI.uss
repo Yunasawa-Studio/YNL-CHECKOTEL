@@ -1,0 +1,39 @@
+:root
+{
+	--color-light-legacy: #FED1A7;
+	--color-ground-light: #3B3B3B;
+	--color-ground-middle: #353535;
+	--color-ground-dark: #303030;
+	--color-contrast-solid: #FFFFFF;
+	--color-contrast-faded: #555555;
+	--color-not-valid: #753737;
+	--color-divider-line: #404040;
+	--color-button-selected: #3B2F24;
+	--color-star-yellow: #FBC23C;
+	--color-badge-red: #EC4E40;
+	--color-border-legacy: #606060;
+	--color-text-faded: #808080;
+
+	--value-transition-duration: 0.2s;
+	--value-divider-width: 2px;
+	--value-border-width: 2px;
+
+	--font-nunito-regular: resource("Fonts/SDFs/Nunito/Nunito-Regular SDF");
+
+	--icon-location: resource("Icons/Location");
+	--icon-building: resource("Icons/Building");
+	--icon-location-light: resource("Icons/Location (Light)");
+	--icon-location-filled: resource("Icons/Location (Filled)");
+	--icon-star-filled: resource("Icons/Star (Filled)");
+	--icon-back: resource("Icons/Back");
+	--icon-checkbox: resource("Icons/Checkbox");
+	--icon-checkbox-checked: resource("Icons/Checkbox (Checked)");
+	--icon-hot: resource("Icons/Trending");
+	--icon-discount: resource("Icons/Discount");
+	--icon-account: resource("Icons/Account");
+	--icon-heart: resource("Icons/Heart");
+	--icon-close: resource("Icons/Close");
+
+	--image-discount-frame: resource("Images/Frames/Discount Frame");
+	--image-discount-frame: resource("Images/Frames/Discount Frame");
+}

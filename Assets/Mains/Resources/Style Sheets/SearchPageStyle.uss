@@ -1,0 +1,174 @@
+.price-range-box {
+    height: 120px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-left-color: rgb(89, 89, 89);
+    border-right-color: rgb(89, 89, 89);
+    border-top-color: rgb(89, 89, 89);
+    border-bottom-color: rgb(89, 89, 89);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.price-range-box__text {
+    color: rgb(254, 209, 167);
+    font-size: 40px;
+    -unity-font-style: bold;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    height: 60px;
+    -unity-text-align: middle-left;
+    -unity-font-definition: resource('Fonts/SDFs/Nunito/Nunito-Regular SDF');
+}
+
+.price-range-box__label {
+    -unity-font-definition: resource('Fonts/SDFs/Nunito/Nunito-Regular SDF');
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    height: 40px;
+    -unity-text-align: middle-left;
+}
+
+.filter-selection-button__label {
+    -unity-font-definition: resource('Fonts/SDFs/Nunito/Nunito-Regular SDF');
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+    margin-left: 0;
+}
+
+.background-transition {
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+.filter-selection-button__label.selected {
+    color: rgb(254, 209, 167);
+}
+
+.popup-page-transition {
+    transition-property: translate;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out-cubic;
+}
+
+.filter-selection-button {
+    flex-direction: row;
+    background-color: rgb(64, 64, 64);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    justify-content: center;
+    flex-basis: 30%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.filter-selection-button__icon {
+    height: 40px;
+    width: 40px;
+    -unity-background-image-tint-color: rgb(251, 194, 60);
+    margin-bottom: 5px;
+    margin-left: 10px;
+    -unity-background-scale-mode: scale-to-fit;
+    align-self: center;
+    background-image: resource('Icons/Star (Filled)');
+}
+
+.filter-selection-button.selected {
+    background-color: rgb(59, 47, 36);
+    border-left-color: rgb(254, 209, 167);
+    border-right-color: rgb(254, 209, 167);
+    border-top-color: rgb(254, 209, 167);
+    border-bottom-color: rgb(254, 209, 167);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+
+.filter-property-element {
+    display: flex;
+}
+
+.filter-attribute-toggle {
+    flex-direction: row;
+    border-left-color: rgb(78, 78, 78);
+    border-right-color: rgb(78, 78, 78);
+    border-top-color: rgb(78, 78, 78);
+    border-bottom-color: rgb(78, 78, 78);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 2px;
+    border-left-width: 0;
+    height: 100px;
+}
+
+.filter-attribute-toggle__label {
+    flex-grow: 1;
+    height: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    -unity-font-definition: resource('Fonts/SDFs/Nunito/Nunito-Regular SDF');
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    -unity-text-align: middle-left;
+}
+
+.filter-attribute-toggle__toggle {
+    width: 75px;
+    height: 75px;
+    align-self: center;
+}
+
+.search-page-label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 0;
+    -unity-font-definition: resource('Fonts/SDFs/Nunito/Nunito-Regular SDF');
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    font-size: 50px;
+}

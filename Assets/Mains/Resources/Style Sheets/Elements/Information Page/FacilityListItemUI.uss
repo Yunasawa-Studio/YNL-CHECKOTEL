@@ -1,0 +1,33 @@
+.facility-list-item
+{
+	flex-direction: row;
+	height: 100px;
+	border-color: #5D5D5D;
+	border-bottom-width: 2px;
+}
+.facility-list-item:hover
+{
+	background-color: transparent;
+}
+.facility-list-item:select
+{
+	background-color: transparent;
+}
+
+.facility-list-item__icon
+{
+	align-self: center;
+	width: 75px;
+	height: 75px;
+	margin: 0px 15px 0px 0px;
+	background-size: 75% 75%;
+}
+
+.facility-list-item__label
+{
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 40px;
+	color: #FFFFFF;
+	-unity-text-align: middle-left;
+	white-space: nowrap;
+}

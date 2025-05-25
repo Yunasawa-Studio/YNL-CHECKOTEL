@@ -1,0 +1,43 @@
+.month-calendar-row
+{
+	flex-direction: row;
+	height: 100px;
+	margin: 0px;
+}
+
+.month-calendar-day
+{
+	flex-grow: 1;
+	justify-content: center;
+	height: 100px;
+}
+
+.month-calendar-day__text
+{
+	align-self: center;
+	width: 90px;
+	height: 90px;
+	margin: 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunity-regular);
+	font-size: 40px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-center;
+	border-radius: 50px;
+}
+.month-calendar-day__text.not-in-month
+{
+	color: var(--color-contrast-faded);
+}
+.month-calendar-day__text.passed-day
+{
+	color: var(--color-not-valid);
+}
+.month-calendar-day__text.selected
+{
+	-unity-font-style: bold;
+	color: var(--color-light-legacy);
+	background-color: var(--color-button-selected);
+	border-color: var(--color-light-legacy);
+	border-width: 2px;
+}

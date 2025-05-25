@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34cb9dbcceac8cd48ad5291581466a43, type: 3}
+  m_Name: ResourceContainerSO
+  m_EditorClassIdentifier: 
+  Icons:
+    _keys:
+    - Home
+    - Home (Filled)
+    - Star
+    - Star (Filled)
+    - Suggestion
+    - Account
+    - Hourly
+    - Overnight (Filled)
+    - Daily
+    - Standard
+    - Family
+    - Business
+    - Standard (Filled)
+    - Overnight
+    - Family (Filled)
+    - Heart
+    - Pool
+    - Location 1
+    - Settings
+    - Star (Half)
+    - Heart (Filled)
+    - Ellipsis
+    - Gym
+    - Spa
+    - Restaurant
+    - Bar
+    - Free parking
+    - Free breakfast
+    - EV Charging Station
+    - Elevator
+    - Pet friendly
+    - Check
+    - Uncheck
+    - Building
+    _values:
+    - {fileID: 2800000, guid: 4ac81693b7e200b44b33db6de9322ac6, type: 3}
+    - {fileID: 2800000, guid: c14929e7b69c84d4f98fe3e725ad813c, type: 3}
+    - {fileID: 2800000, guid: 2a9380732bcbd4a499d7fd506ea12d79, type: 3}
+    - {fileID: 2800000, guid: ce0be4c42e3056f44a239c5c6f5cfff8, type: 3}
+    - {fileID: 2800000, guid: 0218670a7fabf7d4c92a76a9ea0d749b, type: 3}
+    - {fileID: 2800000, guid: 8fab1c44bab0ba24da4e9a3dbacbf050, type: 3}
+    - {fileID: 2800000, guid: 3183ccdbfb97fe748b82b837d87381ce, type: 3}
+    - {fileID: 2800000, guid: ab6760c36dfcf6f48979639d749edf5f, type: 3}
+    - {fileID: 2800000, guid: 7aa27ed44dc2502449486ea51e65cf68, type: 3}
+    - {fileID: 2800000, guid: 5291dbe48464219458d7596ec8c29fb9, type: 3}
+    - {fileID: 2800000, guid: 7d2766e276c38344cbe45c5d04592dc2, type: 3}
+    - {fileID: 2800000, guid: 207e2dbc0e7633a438cc39957a268376, type: 3}
+    - {fileID: 2800000, guid: 8ca8565a8bd1f2a47a97399e10b34f3f, type: 3}
+    - {fileID: 2800000, guid: 63d6e2eaeb98473408e6171134a61405, type: 3}
+    - {fileID: 2800000, guid: db44ab00e81f1744bbac64985856951f, type: 3}
+    - {fileID: 2800000, guid: 3e76431c9c7ffd5409c6241b8407d5ce, type: 3}
+    - {fileID: 2800000, guid: 1678c7a0ac007b6469ef8b41ee7e63cb, type: 3}
+    - {fileID: 2800000, guid: 8bb79ab8d6a60f24e8ba56c3cf7ab5d8, type: 3}
+    - {fileID: 2800000, guid: 9b3738d0d6930db4ca88a3122c5c2c89, type: 3}
+    - {fileID: 2800000, guid: 2ea87e80c83e80b4183f1e6a05d70e9a, type: 3}
+    - {fileID: 2800000, guid: 12ecc37fe56358e4f9a73867ae4a2f24, type: 3}
+    - {fileID: 2800000, guid: ba9909b290a18164fbeddf74d5d0c3ec, type: 3}
+    - {fileID: 2800000, guid: a2ce5dae675296c4786e9582989cb1dc, type: 3}
+    - {fileID: 2800000, guid: f2a99758ef85333468cc80f1ae34994e, type: 3}
+    - {fileID: 2800000, guid: 8512bc26e213700438cd1499acf97b4e, type: 3}
+    - {fileID: 2800000, guid: 095b172b5451a2342a7a3d220dfd8e40, type: 3}
+    - {fileID: 2800000, guid: 427fbfa13347f8f469b6a88de162c41f, type: 3}
+    - {fileID: 2800000, guid: 9bb589a4655f0df4b9219a9ca00c0936, type: 3}
+    - {fileID: 2800000, guid: 14de8e4feb7f2554889bffe9e666c54a, type: 3}
+    - {fileID: 2800000, guid: 25167fb0dc1b5c446a5a86cc5c974e0b, type: 3}
+    - {fileID: 2800000, guid: ae0a9d091cbbef14a9ab241c89f7b54b, type: 3}
+    - {fileID: 2800000, guid: fcc3005327441024c92bd3581cbd1720, type: 3}
+    - {fileID: 2800000, guid: 1895353bb595e6e4796ff9419d3e2d13, type: 3}
+    - {fileID: 2800000, guid: d0d0cd568f6645b49a4e307308926a61, type: 3}
+  Styles:
+    _keys:
+    - StyleVariableUI
+    - HotelPreviewItemUI
+    - HomeNavigationButtonUI
+    - SuggestFilterButtonUI
+    - HotelPreviewListUI
+    - SearchingSelectTypeUI
+    - TimePointButtonUI
+    - MonthCalendarRowUI
+    - MonthCalendarViewUI
+    - TogglePropertyItemUI
+    - FilterPropertyButtonUI
+    - SearchingResultItemUI
+    - FeedbackResultItemUI
+    - SearchingHistoryItemUI
+    - FeedbackPreviewItemUI
+    - GlobalStyleUI
+    - FacilityListItemUI
+    - RoomSelectItemUI
+    _values:
+    - {fileID: 7433441132597879392, guid: 49e6911f502a4884986b052a537ff52e, type: 3}
+    - {fileID: 7433441132597879392, guid: 36fe24511262ddf46aef91b541fe8395, type: 3}
+    - {fileID: 7433441132597879392, guid: b5df1719cf2483e46aae52f8643c9b3b, type: 3}
+    - {fileID: 7433441132597879392, guid: 7d1cdb147ff11e64e8176cbdf584d536, type: 3}
+    - {fileID: 7433441132597879392, guid: a417d61013b01fc4887850a708011d6e, type: 3}
+    - {fileID: 7433441132597879392, guid: 78281ef6e3b19a84bbe9434b21cd11e1, type: 3}
+    - {fileID: 7433441132597879392, guid: 6cb1fc72a870f95499d9410e45c0a442, type: 3}
+    - {fileID: 7433441132597879392, guid: 5d86b092fe2f6874f9adffeea058acef, type: 3}
+    - {fileID: 7433441132597879392, guid: 5a1ebc9488cc9b2459be11a87e5dec62, type: 3}
+    - {fileID: 7433441132597879392, guid: 910cefb1beb0d5345bb9a8dbe12868ec, type: 3}
+    - {fileID: 7433441132597879392, guid: d1c6c349a69ebae40904674ce85de7cb, type: 3}
+    - {fileID: 7433441132597879392, guid: b105b88172ad1194aa7b0b0ef500d3e2, type: 3}
+    - {fileID: 7433441132597879392, guid: a6a23a32ab4723e418b25caec7cc7075, type: 3}
+    - {fileID: 7433441132597879392, guid: c48036b455d7f5c4c9e2b51edd97623e, type: 3}
+    - {fileID: 7433441132597879392, guid: a9502bf9e3a81b04f8c7af19f6fa1b5f, type: 3}
+    - {fileID: 7433441132597879392, guid: b3cceb02eaaeb8f4f98bbae2c61b0efa, type: 3}
+    - {fileID: 7433441132597879392, guid: 47e7375f9dbb50e4b82533134158c5d4, type: 3}
+    - {fileID: 7433441132597879392, guid: abc8ff83a8eee8748be5f4bda031ee7a, type: 3}

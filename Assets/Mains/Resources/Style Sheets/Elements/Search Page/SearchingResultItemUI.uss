@@ -1,0 +1,201 @@
+.searching-result-item
+{
+	overflow: hidden;
+	height: 650px;
+	padding: 0px 0px 50px 0px;
+	border-radius: 25px;
+}
+.searching-result-item:hover
+{
+	background-color: transparent;
+}
+.searching-result-item:select
+{
+	background-color: transparent;
+}
+
+.searching-result-item__preview-area
+{
+	height: 350px;
+	background-color: var(--color-ground-dark);
+	-unity-background-scale-mode: scale-and-crop;
+	border-color: var(--color-ground-light);
+	border-width: 2px 2px 0px 2px;
+}
+
+.searching-result-item__hot-tag
+{
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+	flex-direction: row;
+	height: 50px;
+	padding: 0px 10px 0px 7.5px;
+	background-color: var(--color-badge-red);
+	border-radius: 5px;
+}
+
+.searching-result-item__hot-tag-icon
+{
+	width: 40px;
+	height: 100%;
+	background-image: var(--icon-hot);
+	-unity-background-scale-mode: scale-to-fit;
+}
+
+.searching-result-item__hot-tag-text
+{
+	margin: 0px 0px 0px 5px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 40px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+
+.searching-result-item__info-area
+{
+	flex-grow: 1;
+	padding: 20px 30px 20px 30px;
+	background-color: var(--color-ground-light);
+	border-radius: 0px 0px 25px 25px;
+}
+
+.searching-result-item__name-field
+{
+	flex-direction: row;
+	height: 75px;
+}
+
+.searching-result-item__name-text
+{
+	overflow: hidden;
+	flex-grow: 1;
+	max-width: 700px;
+	margin: 0px 25px 0px 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	-unity-font-style: bold;
+	font-size: 50px;
+	color: var(--color-contrast-solid);
+	text-overflow: ellipsis;
+}
+
+.searching-result-item__rating-field
+{
+	flex-direction: row;
+}
+
+.searching-result-item__rating-icon
+{
+	width: 30px;
+	height: 100%;
+	background-image: var(--icon-star-filled);
+	-unity-background-image-tint-color: var(--color-star-yellow);
+	-unity-background-scale-mode: scale-to-fit;
+	translate: 0px -5px;
+}
+
+.searching-result-item__rating-text
+{
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 35px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+
+.searching-result-item__address-field
+{
+	flex-direction: row;
+	height: 30px;
+	margin: 0px 0px 10px 0px;
+}
+
+.searching-result-item__address-icon
+{
+	width: 25px;
+	height: 100%;
+	background-image: var(--icon-location-filled);
+	-unity-background-scale-mode: scale-to-fit;
+}
+
+.searching-result-item__address-text
+{
+	flex-grow: 1;
+	margin: 0px 0px 0px 5px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 35px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+
+.searching-result-item__space-field
+{
+	flex-grow: 1;
+}
+
+.searching-result-item__price-field
+{
+	height: 110px;
+	margin: 10px 0px 0px 0px;
+}
+
+.searching-result-item__original-field
+{
+	flex-direction: row;
+	height: 50px;
+}
+
+.searching-result-item__original-price
+{
+	margin: 0px 20px 0px 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 35px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-center;
+}
+
+.searching-result-item__discount-field
+{
+	flex-direction: row;
+	padding: 0px 10px 0px 5px;
+	background-color: var(--color-light-legacy);
+	border-radius: 5px;
+}
+
+.searching-result-item__discount-icon
+{
+	width: 30px;
+	padding: 0px 5px 0px 5px;
+	background-image: var(--icon-discount);
+	-unity-background-image-tint-color: var(--color-ground-light);
+	-unity-background-scale-mode: scale-to-fit;
+}
+
+.searching-result-item__discount-text
+{
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	-unity-font-style: bold;
+	font-size: 30px;
+	color: var(--color-ground-light);
+	-unity-text-align: middle-left;
+}
+
+.searching-result-item__last-price
+{
+	height: 60px;
+	margin: 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 50px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+
+}
+

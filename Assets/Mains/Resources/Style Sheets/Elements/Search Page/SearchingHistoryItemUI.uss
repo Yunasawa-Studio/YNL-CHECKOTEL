@@ -1,0 +1,48 @@
+.searching-history-item
+{
+	flex-direction: row;
+	height: 100px;
+}
+.searching-history-item:hover
+{
+	background-color: transparent;
+}
+.searching-history-item:select
+{
+	background-color: transparent;
+}
+
+.searching-history-item__icon
+{
+	min-width: 60px;
+	max-width: 60px;
+	height: 100%;
+	background-image: var(--icon-location);
+	-unity-background-scale-mode: scale-to-fit;
+}
+.searching-history-item__icon.building
+{
+	background-image: var(--icon-building);
+}
+
+.searching-history-item__text
+{
+	flex-grow: 1;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 40px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+
+.searching-history-item__remove-button
+{
+	align-self: center;
+	width: 60px;
+	height: 60px;
+	background-color: var(--color-ground-middle);
+	background-image: var(--icon-close);
+	background-size: 40% 40%;
+	border-radius: 50px;
+}

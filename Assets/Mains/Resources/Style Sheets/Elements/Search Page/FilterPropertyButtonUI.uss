@@ -1,0 +1,47 @@
+.filter-property-button
+{
+	flex-basis: 30%;
+	flex-direction: row;
+	justify-content: center;
+	height: 100px;
+	margin: 0px 0px 20px 0px;
+	background-color: var(--color-divider-line);
+	border-radius: 50px;
+
+	transition-property: background-color, border-color, border-width;
+	transition-duration: var(--value-transition-duration);
+}
+.filter-property-button.selected
+{
+	background-color: var(--color-button-selected);
+	border-color: var(--color-light-legacy);
+	border-width: 2px;
+}
+
+.filter-property-button__label
+{
+	margin: 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	-unity-font-style: bold;
+	font-size: 40px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+
+	transition-property: color;
+	transition-duration: var(--value-transition-duration);
+}
+.filter-property-button__label.selected
+{
+	color: var(--color-light-legacy);
+}
+
+.filter-property-button__icon
+{
+	align-self: center;
+	width: 40px;
+	height: 40px;
+	margin: 0px 0px 5px 10px;
+	background-image: var(--icon-star-filled);
+	-unity-background-image-tint-color: var(--color-star-yellow);
+}

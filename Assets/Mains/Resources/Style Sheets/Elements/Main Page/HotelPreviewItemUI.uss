@@ -1,0 +1,154 @@
+.hotel-preview-item
+{
+	overflow: hidden;
+	width: 650px;
+	height: 100%;
+	margin-left: 50px;
+	background-color: #3B3B3B;
+	border-radius: 20px;
+}
+.hotel-preview-item.mini
+{
+	width: 400px;
+}
+
+.hotel-preview-item__image
+{
+	height: 400px;
+	-unity-background-scale-mode: scale-and-crop;
+}
+
+.hotel-preview-item__info
+{
+	flex-grow: 1;
+	padding: 0px 20px 10px 20px;
+}
+
+.hotel-preview-item__info-name
+{
+	overflow: hidden;
+	height: 50px;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	-unity-font-style: bold;
+	font-size: 40px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+	text-overflow: ellipsis;
+}
+
+.hotel-preview-item__info-location
+{
+	flex-direction: row;
+	height: 40px;
+	margin: 10px 0px 10px 0px;
+}
+
+.hotel-preview-item__info-location-icon
+{
+	width: 35px;
+	height: 100%;
+	background-image: var(--icon-location-light);
+	-unity-background-scale-mode: scale-to-fit;
+}
+
+.hotel-preview-item__info-location-text
+{
+	flex-grow: 1;
+	margin: 0px 0px 0px 5px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 35px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+
+.hotel-preview-item__space
+{
+	flex-grow: 1;
+}
+
+.hotel-preview-item__info-price
+{
+	flex-direction: row;
+	height: 50px;
+}
+
+.hotel-preview-item__info-price-text
+{
+	flex-grow: 1;
+	margin: 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 35px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+
+.hotel-preview-item__info-rating
+{
+	flex-direction: row;
+	height: 40px;
+}
+
+.hotel-preview-item__info-rating-icon
+{
+	width: 25px;
+	margin: 0px 0px 5px 0px;
+	background-image: var(--icon-star-filled);
+	-unity-background-image-tint-color: #FFE12A;
+	-unity-background-scale-mode: scale-to-fit;
+}
+
+.hotel-preview-item__info-rating-text
+{
+	margin: 0px 0px 0px 5px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 30px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+
+.hotel-preview-item__info-discount
+{
+	overflow: hidden;
+	flex-direction: row;
+	height: 40px;
+	margin: 10px 0px 10px 0px;
+	border-color: #FED1A7;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.hotel-preview-item__info-discount-frame
+{
+	width: 100px;
+	background-image: var(--image-discount-frame);
+	-unity-background-image-tint-color: #FED1A7;
+}
+
+.hotel-preview-item__info-discount-amount
+{
+	height: 100%;
+	margin: 0px 20px 0px 0px;
+	padding: 0px 0px 0px 5px;
+	-unity-font-definition: var(--font-nunito-regular);
+	-unity-font-style: bold;
+	font-size: 25px;
+	color: #292929;
+	-unity-text-align: middle-center;
+}
+
+.hotel-preview-item__info-discount-text
+{
+	flex-grow: 1;
+	margin: 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	-unity-font-style: bold;
+	font-size: 25px;
+	color: #FED1A7;
+	-unity-text-align: middle-center;
+}

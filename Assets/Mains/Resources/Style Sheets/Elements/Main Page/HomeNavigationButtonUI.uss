@@ -1,0 +1,41 @@
+.home-navigation-button
+{
+	justify-content: center;
+	width: 150px;
+	height: 150px;
+}
+
+.home-navigation-button__icon
+{
+	align-self: center;
+	width: 100px;
+	height: 60px;
+	-unity-background-image-tint-color: #676767;
+	-unity-background-scale-mode: scale-to-fit;
+
+	transition-property: -unity-background-image-tint-color;
+	transition-duration: var(--time-transition-duration);
+}
+.home-navigation-button__icon.selected
+{
+	-unity-background-image-tint-color: var(--color-light-legacy);
+}
+
+.home-navigation-button__label
+{
+	height: 25px;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunity-regular);
+	-unity-font-style: bold;
+	font-size: 30px;
+	color: #676767;
+	-unity-text-align: middle-center;
+
+	transition-property: color;
+	transition-duration: var(--time-transition-duration);
+}
+.home-navigation-button__label.selected
+{
+	color: var(--color-light-legacy);
+}

@@ -1,0 +1,137 @@
+.room-select-item
+{
+	overflow: hidden;
+	height: 650px;
+	padding: 0px;
+	border-radius: 25px;
+}
+.room-select-item:hover
+{
+	background-color: transparent;
+}
+.room-select-item:select
+{
+	background-color: transparent;
+}
+
+.room-select-item__preview-area
+{
+	height: 415px;
+	margin: 25px 0px 0px 0px;
+	background-color: var(--color-ground-dark);
+	-unity-background-scale-mode: scale-and-crop;
+	border-color: var(--color-ground-light);
+	border-width: 2px 2px 0px 2px;
+	border-radius: 25px 25px 0px 0px;
+}
+
+.room-select-item__info-area
+{
+	flex-grow: 1;
+	padding: 20px 30px 20px 30px;
+	background-color: var(--color-ground-light);
+	border-radius: 0px 0px 25px 25px;
+}
+
+.room-select-item__name-text
+{
+	overflow: hidden;
+	flex-grow: 1;
+	height: 75px;
+	margin: 0px 25px 0px 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	-unity-font-style: bold;
+	font-size: 50px;
+	color: var(--color-contrast-solid);
+	text-overflow: ellipsis;
+}
+
+.room-select-item__space-field
+{
+	flex-grow: 1;
+}
+
+
+.room-select-item__price-field
+{
+	flex-direction: row;
+	height: 110px;
+	margin: 10px 0px 0px 0px;
+}
+
+.room-select-item__price-area
+{
+	flex-grow: 1;
+	height: 110px;
+}
+
+.room-select-item__book-button
+{
+	align-self: center;
+	width: 200px;
+	height: 100px;
+	-unity-font-definition: var(--font-nunito-regular);
+	-unity-font-style: bold;
+	font-size: 45px;
+	color: #292929;
+	-unity-text-align: middle-center;
+	background-color: var(--color-light-legacy);
+	border-radius: 50px;
+}
+
+.room-select-item__original-field
+{
+	flex-direction: row;
+	height: 50px;
+}
+
+.room-select-item__original-price
+{
+	margin: 0px 20px 0px 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 35px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-center;
+}
+
+.room-select-item__discount-field
+{
+	flex-direction: row;
+	padding: 0px 10px 0px 5px;
+	background-color: var(--color-light-legacy);
+	border-radius: 5px;
+}
+
+.room-select-item__discount-icon
+{
+	width: 30px;
+	padding: 0px 5px 0px 5px;
+	background-image: var(--icon-discount);
+	-unity-background-image-tint-color: var(--color-ground-light);
+	-unity-background-scale-mode: scale-to-fit;
+}
+
+.room-select-item__discount-text
+{
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	-unity-font-style: bold;
+	font-size: 30px;
+	color: var(--color-ground-light);
+	-unity-text-align: middle-left;
+}
+
+.room-select-item__last-price
+{
+	height: 60px;
+	margin: 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 50px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+

@@ -1,0 +1,116 @@
+.search-input > .unity-base-text-field__input {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    color: rgb(255, 255, 255);
+    --unity-cursor-color: var(--color-contrast-solid);
+}
+
+.frame-border {
+    border-left-color: rgb(115, 115, 115);
+    border-right-color: rgb(115, 115, 115);
+    border-top-color: rgb(115, 115, 115);
+    border-bottom-color: rgb(115, 115, 115);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.label-field {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    -unity-font-definition: resource('Fonts/SDFs/Nunito/Nunito-Regular SDF');
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.price-range-slider > * > * {
+    height: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(55, 55, 55);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.price-range-slider > * > * > * {
+    height: 75px;
+    width: 75px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: rgb(41, 41, 41);
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-left-color: rgb(253, 179, 116);
+    border-right-color: rgb(253, 179, 116);
+    border-top-color: rgb(253, 179, 116);
+    border-bottom-color: rgb(253, 179, 116);
+    -unity-background-image-tint-color: rgb(253, 179, 116);
+    background-size: 50% 50%;
+    rotate: 90deg;
+    background-image: resource('Icons/Menu');
+}
+
+.price-range-slider > * > .unity-min-max-slider__dragger {
+    background-color: rgb(201, 145, 97);
+    justify-content: center;
+    height: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.filter-attribute-toggle {
+}
+
+.search-page-label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 0;
+    -unity-font-definition: resource('Fonts/SDFs/Nunito/Nunito-Regular SDF');
+    color: rgb(255, 255, 255);
+    -unity-font-style: normal;
+    font-size: 50px;
+}
+
+.background-transition {
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+.popup-page-transition {
+    transition-property: translate;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out-cubic;
+}

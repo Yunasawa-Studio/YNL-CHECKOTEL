@@ -1,0 +1,124 @@
+.review-result-item 
+{
+	width: 700px;
+	height: 225;
+	margin: 0px 25px 0px 0px;
+	padding: 25px 25px 15px 25px;
+}	
+	
+.review-result-item__background
+{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: var(--color-ground-dark);
+	border-color: var(--color-border-legacy);
+	border-width: var(--value-border-width);
+	border-radius: 15px;
+}
+
+.review-result-item__info-field 
+{
+	flex-direction: row;
+	height: 75px;
+	min-height: 75px;
+}
+
+.review-result-item__account-picture 
+{
+	align-self: center;
+	width: 75px;
+	height: 75px;
+	background-color: var(--color-ground-light);
+	background-image: var(--icon-account);
+	background-size: 60% 60%;
+	border-color: var(--color-border-legacy);
+	border-width: var(--value-border-width);
+	border-radius: 37.5px;
+}
+
+.review-result-item__account-text 
+{
+	flex-grow: 1;
+	height: 100%;
+	margin: 0px 0px 0px 15px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 40px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+
+.review-result-item__star-field 
+{
+	flex-direction: row;
+	height: 100%;
+	padding: 5px 0px 0px 0px;
+}
+
+.review-result-item__star-icon 
+{
+	width: 35px;
+	height: 35px;
+	margin: 0px 0px 0px 5px;
+	background-image: var(--icon-star-filled);
+	-unity-background-image-tint-color: var(--color-star-yellow);
+}
+
+.review-result-item__comment-text 
+{
+	overflow: hidden;
+	flex-grow: 1;
+	height: 100px;
+	margin: 15px 0px 0px 0px;
+	padding: 0px;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 35px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+	white-space: normal;
+	text-overflow: ellipsis;
+}
+
+.review-result-item__tool-field 
+{
+	flex-direction: row;
+	height: 40px;
+	margin: 25px 0px 0px 0px;
+}
+
+.review-result-item__time-stamp 
+{
+	flex-grow: 1;
+	height: 100%;
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 30px;
+	color: var(--color-text-faded);
+	-unity-text-align: middle-left;
+}
+
+.review-result-item__like-field 
+{
+	flex-direction: row-reverse;
+	width: 150px;
+	height: 100%;
+}
+
+.review-result-item__like-amount 
+{
+	-unity-font-definition: var(--font-nunito-regular);
+	font-size: 30px;
+	color: var(--color-contrast-solid);
+	-unity-text-align: middle-left;
+}
+
+.review-result-item__like-icon 
+{
+	width: 40px;
+	height: 40px;
+	margin: 0px 10px 0px 10px;
+	background-image: var(--icon-heart);
+	-unity-background-image-tint-color: var(--color-contrast-solid);
+}

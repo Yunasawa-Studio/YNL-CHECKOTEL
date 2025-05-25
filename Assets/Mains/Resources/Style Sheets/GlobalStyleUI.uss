@@ -1,0 +1,8 @@
+.review-view-ellipsis
+{
+	width: 75px;
+	height: 225px;
+	margin-left: 15px;
+	-unity-background-image-tint-color: #606060;
+	-unity-background-scale-mode: scale-to-fit;
+}
