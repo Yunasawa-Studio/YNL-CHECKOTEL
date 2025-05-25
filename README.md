@@ -1,4 +1,4 @@
-<div align=center><h1> YNL-CHECKOTEL </h1></div>
+<div align=center><h1> YNL - CHECKOTEL </h1></div>
 
 > [!Note]
 > A hotels & resources reservation application created with C#/Unity.
